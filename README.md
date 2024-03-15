@@ -9,9 +9,9 @@
 ## Features
 
 - Navbar is pinned while scrolling the Jumplink Element
-- NavBar title dinamicaly change when new container hit top of viewport
-- Navbar expand and reveal a set of hyperlinks which will scroll to the selected container
-- Aria dinamicaly change when the Nav is expanded or not
+- NavBar title dynamically changes when a new container hits the top of the viewport
+- Navbar expands and reveals a set of hyperlinks which will scroll to the selected container
+- Aria dynamically changes when the Nav is expanded or not
 
 ## Link
 
