@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numiko Tech Test</title>
+  </head>
+  <body>
+    <main class="flex flex-col gap-8">
+      <section class="bg-gray-200 h-[41rem] py-8 text-xl">
+        <div class="max-w-[112.5rem] mx-auto px-4 lg:px-8">
+          <h2>Section Above JumpLinks 1</h2>
+        </div>
+      </section>
+
+      <section class="bg-gray-200 h-[41rem] py-8 text-xl">
+        <div class="max-w-[112.5rem] mx-auto px-4 lg:px-8">
+          <h2>Section Above JumpLinks 2</h2>
+        </div>
+      </section>
+
+      <!-- Jumlinks Section -->
+      <section id="jumpLinkSection" class="relative">
+        <!-- Nav Jumlink section -->
+        <nav
+          id="navSection"
+          class="absolute z-10 top-0 right-0 min-w-[100%] bg-black text-white"
+          role="Jumlink navigation"
+          aria-label="Jumlink Navigation"
+        >
+          <div
+            class="max-w-[112.5rem] min-h-[72px] px-4 lg:px-8 mx-auto flex justify-between items-center"
+          >
+            <p id="navTitle">Section One</p>
+            <p aria-expanded="false" id="showButton">Show</p>
+          </div>
+
+          <progress
+            id="progressBar"
+            max="100"
+            value="0"
+            class="w-full h-[3px] text-cyan-400 absolute"
+          ></progress>
+
+          <div id="subNav" class="bg-black h-0 overflow-hidden">
+            <ul class="flex justify-center space-x-8 py-4">
+              <li>
+                <a
+                  data-section="sectionOne"
+                  class="hover:text-gray-300 cursor-pointer"
+                  aria-label="Go to Section One"
+                  >Section one</a
+                >
+              </li>
+
+              <li>
+                <a
+                  data-section="sectionTwo"
+                  class="hover:text-gray-300 cursor-pointer"
+                  aria-label="Go to Section Two"
+                  >Section two</a
+                >
+              </li>
+
+              <li>
+                <a
+                  data-section="sectionThree"
+                  class="hover:text-gray-300 cursor-pointer"
+                  aria-label="Go to Section Three"
+                  >Section three</a
+                >
+              </li>
+
+              <li>
+                <a
+                  data-section="sectionFour"
+                  class="hover:text-gray-300 cursor-pointer"
+                  aria-label="Go to Section Four"
+                  >Section four</a
+                >
+              </li>
+
+              <li>
+                <a
+                  data-section="sectionFive"
+                  class="hover:text-gray-300 cursor-pointer"
+                  aria-label="Go to Section Five"
+                  >Section five</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- End Nav Jumlink section -->
+
+        <div id="sectionOne" class="flex flex-col gap-8 mt-[72px]">
+          <div class="section bg-gray-200 h-[41rem] py-8 text-xl">
+            <div class="max-w-[112.5rem] mx-auto px-4 lg:px-8">
+              <h2>Section one</h2>
+            </div>
+          </div>
+
+          <div
+            id="sectionTwo"
+            class="section bg-gray-200 h-[41rem] py-8 text-xl"
+          >
+            <div class="max-w-[112.5rem] mx-auto px-4 lg:px-8">
+              <h2>Section two</h2>
+            </div>
+          </div>
+
+          <div
+            id="sectionThree"
+            class="section bg-gray-200 h-[41rem] py-8 text-xl"
+          >
+            <div class="max-w-[112.5rem] mx-auto px-4 lg:px-8">
+              <h2>Section three</h2>
+            </div>
+          </div>
+
+          <div
+            id="sectionFour"
+            class="section bg-gray-200 h-[41rem] py-8 text-xl"
+          >
+            <div class="max-w-[112.5rem] mx-auto px-4 lg:px-8">
+              <h2>Section four</h2>
+            </div>
+          </div>
+
+          <div
+            id="sectionFive"
+            class="section bg-gray-200 h-[41rem] py-8 text-xl"
+          >
+            <div class="max-w-[112.5rem] mx-auto px-4 lg:px-8">
+              <h2>Section five</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End JumpLink Session -------------------------------------------------------------------->
+
+      <section class="bg-gray-200 h-[41rem] py-8 text-xl">
+        <div class="max-w-[112.5rem] mx-auto px-4 lg:px-8">
+          <h2>Section after JumpLinks</h2>
+        </div>
+      </section>
+
+      <section class="bg-gray-200 h-[41rem] py-8 text-xl">
+        <div class="max-w-[112.5rem] mx-auto px-4 lg:px-8">
+          <h2>Section after JumpLinks 2</h2>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
